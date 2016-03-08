@@ -1,0 +1,124 @@
+#srch {
+    width: 100%;
+    border-radius: 0%;
+    margin-bottom: 0%;
+}
+
+#brd {
+    border-radius: 0%;
+    margin-bottom: 0%;
+    /*    margin-right: 0%;*/
+    width: 100%;
+}
+
+#cbe {
+    height: 100%;
+    width: 100%;
+    /*    padding: 0%;*/
+}
+
+img {
+    max-width: 60%;
+    /*
+    height: auto;
+ text-align: center;
+*/
+}
+
+#cb {
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    /*    padding: 0%;*/
+}
+
+#grd {
+    padding: 0 0 0 0;
+    /**! important**/
+    /**top,right,down,left**/
+    /*    padding: 0%;*/
+}
+
+#gr {
+    padding: 0 0 0 0;
+    /**! important**/
+    /**top,right,down,left**/
+    /*    padding: 0%;*/
+}
+
+#grd2 {
+    padding: 0 0 0 0;
+    /**! important**/
+    /**top,right,down,left**/
+}
+
+.ui.cube.shape .side {
+    height: 33em;
+}
+
+.ui.grid {
+    margin: 0;
+    /*    z-index: 40;*/
+}
+
+.ui.grid+.grid {
+    margin: 0em;
+    /**! important**/
+}
+
+.ui.card>.content:after,
+.ui.cards>.card>.content:after {
+    height: 1.4em;
+    position: fixed;
+}
+
+.fa fa-bars {
+    float: left;
+}
+
+.t {
+    border-radius: 0% ! Important;
+    height: 50px ! Important;
+    margin: 0% ! Important;
+    /*    padding: 0%;*/
+}
+
+.row {
+    padding: 3%;
+    /*    margin: 0% ! Important;*/
+}
+
+#pic {
+    /*    float: left;*/
+    width: 250px;
+    height: 250px;
+}
+
+#e {
+    /*    display: block;*/
+    /*    margin-bottom: 1px;*/
+    /*    vertical-align: top;*/
+}
+
+#ei {
+    /*    display: block;*/
+    /*    box-sizing: border-box;*/
+    /*    width: 80%;*/
+    /*    height: 20px;*/
+}
+
+#hi {
+    /*
+    height: 20px;
+vertical-align: bottom;
+*/
+}
+
+#event {
+    text-align: center;
+}
+
+#rd {
+    width: 100%;
+    margin-bottom: 10px;
+}
