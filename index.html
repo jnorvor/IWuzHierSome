@@ -22,9 +22,9 @@
 <body>
     <!--Page One Begins-->
     <div id="Page1" class="page" style="">
-        <div class="ui centered grid">
-            <div class="ui middle aligned center aligned grid">
-                <div class="row">
+        <div class="ui centered grid" id="loginrow">
+            <div class="ui middle aligned center aligned grid" id="sublog">
+                <div class="row" >
                     <div class="column">
                         <div style="display:none" id="success" class="ui success message">
                             <i class="close icon"></i>
@@ -43,30 +43,30 @@
                         </div>
                         <h2 class="ui teal image header">
                             <div class="content">
-                                    Log-in to your account
+                                    <center><img src="pics/key.png" id="logo"></center>
                             </div>
                         </h2>
                         <form class="ui large form">
                             <div class="ui stacked segment">
-                                <div class="field">
+                                <div class="field log">
                                     <div class="ui left icon input">
                                         <i class="user icon"></i>
                                         <input type="email" id="em" name="email" placeholder="E-mail address" required>
                                     </div>
                                 </div>
-                                <div class="field">
+                                <div class="field log">
                                     <div class="ui left icon input">
                                         <i class="lock icon"></i>
                                         <input type="password" id="credentials" name="password" placeholder="Password" required>
                                     </div>
                                 </div>
-                                <button onclick="login()" type="button" class="ui fluid large teal submit button">Login</button>
-                                <div>Or</div>
-                                <button onclick="show('Page2');" type="button" class="ui facebook fluid large submit button">
+                                <button onclick="show('Page2');" type="button" class="ui fluid large teal submit button ">Login</button>
+                                <div class="log">Or</div>
+                                <button onclick="show('Page2');" type="button" class="ui facebook fluid large submit button ">
                                     <i class="facebook icon"></i>Facebook
                                 </button>
-                                <div>Or</div>
-                                <button onclick="show('Page2');" type="button" class="ui google plus fluid large submit button">
+                                <div class="log">Or</div>
+                                <button onclick="show('Page2');" type="button" class="ui google plus fluid large submit button ">
                                     <i class="google plus icon"></i>Google
                                 </button>
                             </div>
@@ -112,8 +112,8 @@
         <div class="ui two column grid">
             <div id="grd" class="eight wide column">
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div id="tst" class="center" onclick="show('Page3');">
                                 My Events
                                 <div id="tst2" class="center">
@@ -125,10 +125,10 @@
                     </div>
                 </div>
             </div>
-            <div id="grd" class="eight wide column ">
+            <div id="grd" class="eight wide column " >
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div class="center" onclick="show('Page3');">
                                 Suggested Events
                                 <div id="tst2" class="center">
@@ -144,8 +144,8 @@
         <div class="ui two column grid">
             <div id="grd2" class="eight wide column">
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div class="center" onclick="show('Page5');">
                                 Create Event
                                 <div id="tst2" class="center">
@@ -159,8 +159,8 @@
             </div>
             <div id="grd2" class="eight wide column ">
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div class="center">
                                 Sign-in For Event
                                 <div id="tst2" class="center">
@@ -176,8 +176,8 @@
         <div class="ui two column grid">
             <div id="grd2" class="eight wide column">
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div class="center" onclick="show('Page3');">
                                 Created Events
                                 <div id="tst2" class="center">
@@ -191,8 +191,8 @@
             </div>
             <div id="grd2" class="eight wide column ">
                 <div id="cbe" class="ui cube shape">
-                    <div class="active side">
-                        <div class="content">
+                    <div class="active side" style="background-color: rgba(34,36,38,.15);">
+                        <div class="content" id="hh">
                             <div class="center" onclick="show('Page3');">
                                 Events
                                 <div id="tst2" class="center">

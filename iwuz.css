@@ -22,7 +22,7 @@ img {
     /*
     height: auto;
  text-align: center;
-*/
+ */
 }
 
 #cb {
@@ -34,12 +34,62 @@ img {
 
 #grd {
     padding: 0 0 0 0;
+
     /**! important**/
     /**top,right,down,left**/
     /*    padding: 0%;*/
 }
+#grd:hover{
+    cursor: pointer; 
+    cursor: hand;
+    background: #555;/*
+     color: white;
+     text-shadow: 2px 2px 4px #000000;*/
 
-#gr {
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+
+ }
+
+ #grd2:hover{
+    cursor: pointer; 
+    cursor: hand;
+    background: #555;/*
+     color: white;
+     text-shadow: 2px 2px 4px #000000;*/
+
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+
+ }
+ #grd #hh:hover{
+    cursor: pointer; 
+    cursor: hand;
+    background: #555;/*
+     color: white;
+     text-shadow: 2px 2px 4px #000000;*/
+
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+
+ }
+
+ #grd2 #hh:hover{
+    cursor: pointer; 
+    cursor: hand;
+    background: #555;/*
+     color: white;
+     text-shadow: 2px 2px 4px #000000;*/
+
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+
+ }
+
+
+
+
+ #gr {
     padding: 0 0 0 0;
     /**! important**/
     /**top,right,down,left**/
@@ -121,4 +171,41 @@ vertical-align: bottom;
 #rd {
     width: 100%;
     margin-bottom: 10px;
+}
+
+#loginrow{
+    padding-top: 40%;
+    height: 80%;
+    /*margin-top: 35%;*/
+    /*background-color: white;*/
+   /* opacity: .95;
+    border-radius: 10px;*/
+
+}
+
+#sublog{
+    background-color: white;
+    opacity: .92;
+    border-radius: 10px;
+    width: 70%;
+    }
+
+#Page1{
+    background-image: url("pics/background_event.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width:100%;
+    max-height:100%;
+}
+
+#logo{
+    width: 50%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.log{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
