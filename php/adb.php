@@ -5,7 +5,7 @@
  */
 
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'iwuzhiersome');
+define("DB_NAME", 'inven');
 //define("DB_NAME", 'csashesi_jude-norvor');
 define("DB_PORT", 3306);
 define("DB_USER", "root");
@@ -98,14 +98,22 @@ class adb {
     function query($str_sql) {
 
         if (!$this->connect()) {
+//            echo "did not connect";
             return false;
         }
+//        else{
+//            echo "connected";
+//        }
 
         $this->result = mysqli_query($this->link,$str_sql);
         if (!$this->result) {
             $this->log_error(LOG_LEVEL_DB_FAIL, 4, "query failed", mysqli_error($this->link));
+            echo "there was an error". mysqli_error($this->link);
             return false;
         }
+//        else{
+//            echo "no error";
+//        }
 
         return true;
     }

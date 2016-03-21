@@ -60,7 +60,8 @@
                                         <input type="password" id="credentials" name="password" placeholder="Password" required>
                                     </div>
                                 </div>
-                                <button onclick="login()" type="button" class="ui fluid large teal submit button">Login</button>
+                                <button type="button" onclick="show('Page2');" class="ui fluid large teal submit button">Login</button>
+                                <!--onclick="login()"-->
                                 <div>Or</div>
                                 <button onclick="show('Page2');" type="button" class="ui facebook fluid large submit button">
                                     <i class="facebook icon"></i>Facebook
@@ -114,7 +115,7 @@
                 <div id="cbe" class="ui cube shape">
                     <div class="active side">
                         <div class="content">
-                            <div id="tst" class="center" onclick="show('Page3');">
+                            <div id="tst" class="center" onclick="show('Page3');display()">
                                 My Events
                                 <div id="tst2" class="center">
                                     <br>
@@ -241,336 +242,7 @@
             </div>
             <div class="results"></div>
         </div>
-        <div class="ui two column grid">
-            <div id="gr" class="eight wide column">
-                <div id="cb" class="ui card" onclick="show('Page6');">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-                    <div class="image">
-                        <center>
-                            <img src="pics/no-preview.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-<i class="fa fa-heart"></i>      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 3 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                        <!--
-                      <span class="right floated">
-    <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-    </span>
--->
-                    </div>
-                </div>
-            </div>
-            <div id="gr" class="eight wide column ">
-                <div id="cb" class="ui card">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-                    <div class="image">
-                        <center>
-                            <img src="pics/Bled,%20Slovenia.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-      <i class="fa fa-heart"></i> 
-      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 20 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ui two column grid">
-            <div id="gr" class="eight wide column">
-                <div id="cb" class="ui card">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-
-                    <div class="image">
-                        <center>
-                            <img src="pics/Broome,%20Australia.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-      <i class="fa fa-heart"></i> 
-      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 40 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div id="gr" class="eight wide column ">
-                <div id="cb" class="ui card">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-
-                    <div class="image">
-                        <center>
-                            <img src="pics/Guaita,%20San%20Marino.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-     <i class="fa fa-heart"></i> 
-      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 2 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ui two column grid">
-            <div id="gr" class="eight wide column">
-                <div id="cb" class="ui card">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-
-                    <div class="image">
-                        <center>
-                            <img src="pics/Island%20Church%20-%20USA.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-     <i class="fa fa-heart"></i> 
-      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 10 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div id="gr" class="eight wide column ">
-                <div id="cb" class="ui card">
-                    <div class="content">
-                        <center>
-                            2016 Party
-                        </center>
-                    </div>
-                    <div class="content">
-                        <center>
-                            Date
-                        </center>
-                    </div>
-
-                    <div class="image">
-                        <center>
-                            <img src="pics/Middle%20Earth%20-%20Germany.jpg">
-                        </center>
-                    </div>
-                    <div class="content">
-                        <span class="right floated">
-    <i class="fa fa-heart"></i> 
-      17 likes
-    </span>
-                        <i class="fa fa-user"></i> 6 people
-                    </div>
-                    <div class="extra content">
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">Tag
-                            <i class="delete icon"></i>
-                        </a>
-                        <a class="ui label">
-                            Tag
-                        <i class="delete icon"></i>
-                        </a>
-                    </div>
-                    <div class="extra content">
-                        <button class="ui circular facebook icon button">
-                            <i class="facebook icon"></i>
-                        </button>
-                        <button class="ui circular twitter icon button">
-                            <i class="twitter icon"></i>
-                        </button>
-                        <button class="ui circular linkedin icon button">
-                            <i class="linkedin icon"></i>
-                        </button>
-                        <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div id="crd" class="ui stackable grid">
         </div>
         <div class="ui inverted vertical footer segment form-page">
             <div class="ui container">
@@ -732,49 +404,49 @@
                 <form class="ui form">
                     <div id="event" class="field">
                         <div class="ui sixteen wide column grid">
-                            <img id="pic" class="ui centered medium circular image" src="pics/upload.png">
+                            <img id="pic" type="file" class="ui centered medium circular image" src="pics/upload.png">
                         </div>
                     </div>
                     <div id="ei" class="field">
                         <div class="field">
                             <label>Name of event </label>
-                            <input type="text" id="e" class="t" name="e-name" placeholder="Event Name">
+                            <input type="text" id="event" class="t" name="e-name" placeholder="Event Name">
                         </div>
                         <div id="hi" class="field">
                             <label>Host Name </label>
-                            <input type="text" class="t" name="h-name" placeholder="Host">
+                            <input type="text" id="host" class="t" name="h-name" placeholder="Host">
                         </div>
                         <div class="field">
                             <label>Start Date</label>
-                            <input type="text" class="t" name="daterange" placeholder="Start Date" />
+                            <input type="text" id="start" class="t" name="daterange" placeholder="Start Date" />
                         </div>
                         <div class="field">
                             <label>End Date</label>
-                            <input type="text" class="t" name="daterange" placeholder="End Date" />
+                            <input type="text" id="end" class="t" name="daterange" placeholder="End Date" />
                         </div>
                         <div class="field">
                             <label>Time</label>
-                            <input type="text" class="t" name="daterange" placeholder="Time" />
+                            <input type="text" id="gmt" class="t" name="daterange" placeholder="Time" />
                         </div>
                         <div class="field">
                             <label>Location</label>
-                            <input type="text" class="t" name="daterange" placeholder="Location" />
+                            <input type="text" id="location" class="t" name="daterange" placeholder="Location" />
                         </div>
                         <div class="field">
                             <label>Description</label>
-                            <textarea class="t" placeholder="Description"></textarea>
+                            <textarea class="t" id="description" placeholder="Description"></textarea>
                         </div>
                     </div>
                     <row>
                         <div class="sixteen wide column">
-                            <button class="massive ui button" id="rd">
+                            <button class="massive ui button" type="button" onclick="eCreate()" id="rd">
                                 Create
                             </button>
                         </div>
                     </row>
                     <row>
                         <div class="sixteen wide column">
-                            <button class="massive ui button" id="rd">
+                            <button type="button" class="massive ui button" id="rd">
                                 Cancel
                             </button>
                         </div>
