@@ -9,7 +9,7 @@ define("DB_NAME", 'inven');
 //define("DB_NAME", 'csashesi_jude-norvor');
 define("DB_PORT", 3306);
 define("DB_USER", "root");
-define("DB_PWORD", "");
+define("DB_PWORD", "linux15");
 //define("DB_USER", "csashesi_jn16"); //define("DB_PWORD", "db!7HhJ4");
 
 define("LOG_LEVEL_SEC", 0);
