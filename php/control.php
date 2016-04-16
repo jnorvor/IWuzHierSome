@@ -7,10 +7,21 @@ if(!isset($_REQUEST['cmd'])){
 $cmd = $_REQUEST['cmd'];
 
 switch ($cmd) {
-// case 1: // login(); // break; // case 2: // signUp(); // break; // case 3: // createEvent(); // break; // case 4: // loginCheck(); // break;
-  case 1:
-  getEvents();
-  break;
+ case 1: 
+ login(); 
+ break; 
+ case 2: 
+ signUp(); 
+ break; 
+ case 3: 
+ createEvent(); 
+ break; 
+ case 4: 
+ loginCheck(); 
+ break;
+ case 5:
+ getEvents();
+ break;
 //  case 6:
 //  editEquipment();
 //  break;
@@ -64,6 +75,53 @@ function getEvents(){
 		}
 	echo json_encode($data);
 }
+
+function createEvent(){
+   include_once "adb.php";
+    $eqp = new adb();
+     $event=$_REQUEST['events'];
+    $host=$_REQUEST['host'];
+    $start=$_REQUEST['start'];
+    $end=$_REQUEST['end'];
+    $gmt=$_REQUEST['gmt'];
+    $location=$_REQUEST['location'];
+    $description=$_REQUEST['description'];
+    $tag=$_REQUEST['tag'];
+    
+    $target_dir = "../pics/";
+    $target_file = $target_dir . basename($_FILES["thepic"]["name"]);
+    $file= $target_file;
+
+    
+//    if($file!=""){  "../pics/".$_FILES["thepic"]["name"]
+    if(move_uploaded_file($_FILES["thepic"]["tmp_name"],  $target_file)){
+       // echo $file;
+       echo "yes!";
+        $query="INSERT INTO events(name, start_date, end_date, start_time, end_time, picture, location, user_id, description, category)
+        VALUES ('$event',$start,$end,$gmt,$location, '$description', '$category')";
+//        $sql = array(); 
+//foreach( $data as $row ) {
+//    $sql[] = '("'.mysql_real_escape_string($row['text']).'", '.$row['category_id'].')';
+//}
+//mysql_query('INSERT INTO table (text, category) VALUES '.implode(',', $sql));
+//	}else { 
+//        echo "error!";
+//         //Gives and error if its not // 
+////        echo '{"res":"Sorry, there was a problem updating your profile."}';
+//         }
+    
+}
+}
+
+
+        
+//    $str_query="select * from inven_products";
+//    if(!$eqp->query($str_query)){
+//   echo '{"result": 0, "message": "No Events in database"}';
+//        return;
+//    }
+//    $data = array(); // $row = $eqp->fetch(); // while ($row) { // $row_array['id'] = $row['id']; // $row_array['owner'] = $row['product_id']; // $row_array['name'] = $row['products']; // $row_array['des'] = $row['quantity']; // $row_array['contact'] = $row['price']; // $row = $eqp->fetch(); // // //push the values in the array // array_push($data,$row_array); // } // echo json_encode($data);
+//}
 /**
 * check if user is logged in
 **/
@@ -301,20 +359,5 @@ function getEvents(){
 //    return;
 //}
 //
-//function add_borrowed(){
-//    include "adb.php";
-//    $eqp = new adb();
-//    $pid = $_GET['pid'];
-//    $name = $_GET['pname'];
-//    $user = $_GET['yname'];
-//    $ids = $_GET['yid'];
-//	
-//	$sql="INSERT INTO items_borrowed(product_id,product_name,user_name,user_id)VALUES('$pid','$name','$user','$ids')";
-//    if(!$eqp->query($sql)){
-//        echo '{"result": 0, "message": "Borrowed Equipment was not added"}';
-//        return;
-//    }
-//    echo '{"result": 1, "message": "Equipment was added successfully"}';
-//return;
-//}
+
 ?>

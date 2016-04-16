@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.norvorjs.pg" versionCode="11" version="1.2.0">
+        <!--	versionCode	is	opIonal	and	Android	only	-->
+        <name>Teckie Services</name>
+        <description>
+            Iwuzhiersome
+        </description>
+        <author href="http://www.ashesi.edu.gh" email="norvorjude@gmail.com">
+            J Norvor
+        </author>
+        <icon src="icon.png" />
+        <gap:splash src="ikeep.png" />
+        <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0" />
+        <!-- <plugin name="com.cesidiodibenedetto.filechooser" spec="1.0.0" source="pgb" /> -->
+        <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+        <allow-navigation href="*" />
+        <allow-intent href="*" />
+        <access origin="*" />
+    </widget>

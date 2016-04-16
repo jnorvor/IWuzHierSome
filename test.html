@@ -57,15 +57,56 @@
                         <div class="field">
 -->
     <!--    <input type="text" id="config-demo" class="form-control">-->
-    <p>Date:
+    <!--     <p>Date:
         <input type="text" id="datepicker" class="ui-datepicker-title">
     </p>
-    <div id="datepicker"></div>
+    <div id="datepicker"></div> -->
 
     <div class="ui icon big button">
         <i class="cloud icon"></i>
-        <input type="file" id="hidde-new-file" style="display: none">
+        <input type="file" id="hidde-new-file">
     </div>
+
+    <div class="ui selection dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+            <div class="item" data-value="1">Male</div>
+            <div class="item" data-value="0">Female</div>
+        </div>
+    </div>
+
+    <div class="ui selection dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+            <div class="item" data-value="male">Male</div>
+            <div class="item" data-value="female">Female</div>
+        </div>
+    </div>
+
+    <select class="ui search dropdown">
+        <option value="">State</option>
+        <option value="AL">Alabama</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+    </select>
+
+    <select id="myselect">
+        <option value="1">Mr</option>
+        <option value="2">Mrs</option>
+        <option value="3">Ms</option>
+        <option value="4">Dr</option>
+        <option value="5">Prof</option>
+    </select>
     <!--
     </div>
 <div class="field">
@@ -88,11 +129,11 @@
 </script>
 -->
     <!--    </script>-->
-    <script>
+    <!--     <script>
         $(function () {
             $("#datepicker").datepicker();
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
